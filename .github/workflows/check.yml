@@ -1,0 +1,11 @@
+name: Simple Check
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always pass
+        run: echo "CI check ran successfully"
